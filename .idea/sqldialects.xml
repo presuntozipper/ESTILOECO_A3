@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/1474a9ce-3753-43cf-8bb1-4963663c01b0/console.sql" dialect="MySQL" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/b42940e5-cc40-4dae-8ff7-8708c041a273/console_4.sql" dialect="MySQL" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/b42940e5-cc40-4dae-8ff7-8708c041a273/console_9.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/projetoa3/alpha0001/CadastroController.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/projetoa3/alpha0001/Config_ContaController.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/projetoa3/alpha0001/ConnectDb.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/projetoa3/alpha0001/LoginController.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/projetoa3/alpha0001/SQL/SQL.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/projetoa3/alpha0001/doacaoController.java" dialect="GenericSQL" />
+  </component>
+</project>

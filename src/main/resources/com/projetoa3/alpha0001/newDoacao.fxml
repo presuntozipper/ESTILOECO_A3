@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="523.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetoa3.alpha0001.doacaoController">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="5.0" prefHeight="513.0" prefWidth="731.0" styleClass="backPanel" stylesheets="@design.css">
+         <children>
+            <Text layoutX="278.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doe suas Peças Jeans!" wrappingWidth="500.9830722808838">
+               <font>
+                  <Font name="FontAwesome Regular" size="44.0" />
+               </font>
+            </Text>
+            <Text layoutX="202.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nos informe qual o tipo peça" />
+            <Spinner fx:id="contador" editable="true" layoutX="73.0" layoutY="197.0" prefHeight="31.0" prefWidth="117.0" />
+            <Text layoutX="73.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nos informe a quantidade de peças" wrappingWidth="145.0" />
+            <TextField fx:id="insert" layoutX="218.0" layoutY="200.0" prefHeight="26.0" prefWidth="165.0" promptText="insira aqui!" />
+            <Button fx:id="cupon" layoutX="389.0" layoutY="450.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="145.0" text="Gerar Id de doação" />
+            <Text layoutX="52.0" layoutY="414.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="*Ao doar peças você tem direito a cupons de desconto na loja." wrappingWidth="187.93618774414062" />
+            <Button fx:id="Voltar" layoutX="729.0" layoutY="2.0" mnemonicParsing="false" onAction="#voltar" styleClass="voltar-btn" stylesheets="@design.css" text="X" />
+            <Button fx:id="insertItem" layoutX="251.0" layoutY="242.0" mnemonicParsing="false" onAction="#addLista" text="inserir" />
+            <ListView fx:id="listView" layoutX="388.0" layoutY="153.0" prefHeight="209.0" prefWidth="188.0" />
+            <ListView fx:id="listViewQTD" layoutX="576.0" layoutY="153.0" prefHeight="209.0" prefWidth="54.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

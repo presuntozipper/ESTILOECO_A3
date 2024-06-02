@@ -1,0 +1,93 @@
+.loggin-btn{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+.loggin-btn:hover{
+    -fx-background-color: green;
+}
+.cadastro-btn{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;}
+.cadastro-btn:hover{
+    -fx-background-color: dodgerblue;
+}
+.close-btn{
+    -fx-text-fill: black;
+    -fx-cursor:hand;
+}
+.close-btn:hover{
+    -fx-background-color: red;
+}
+.voltar-btn{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+.voltar-btn:hover{
+    -fx-background-color: indianred;
+}
+.anchor-pane{
+    -fx-background-color: transparent;
+}
+.final_pane{
+    -fx-background-color:linear-gradient(to bottom right, #0c9132,whitesmoke);
+    -fx-border-width: .4px .0px .0px .4px;
+}
+.final-btn{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-border-color: Black;
+}
+
+.final-btn:hover{
+    -fx-background-color: dodgerblue;
+}
+.transparente{
+    -fx-background-color: transparent;
+}
+.normal-btn{
+    -fx-background-color: cadetblue;
+}
+.normal-btn:hover{
+    -fx-cursor: hand;
+}
+.dashPane{
+    -fx-background-color: #ffffff;
+}
+.logout-btn{
+    -fx-background-color: darkgrey;
+}
+.logout-btn:hover{
+    -fx-background-color: darkred;
+    -fx-cursor: hand;
+}
+.conta{
+    -fx-background-color: darkgrey;
+}
+
+.produtc-pane{
+    -fx-border-color: black;
+    -fx-border-radius: 10%;
+    -fx-background-color: #e0dcdc;
+    -fx-background-radius: 10%;
+}
+.btn-product{
+    -fx-border-color: black;
+    -fx-border-radius: 10%;
+    -fx-background-color: transparent;
+}
+.btn-product:hover{-fx-cursor: hand}
+.backPanel{
+    -fx-background-color: #f8f8f8;
+     -fx-border-color: black;
+    -fx-border-radius: 0.5%;
+
+}
+.menu-btn{
+    -fx-background-color: transparent;
+}
+.menu-btn:hover{
+    -fx-cursor: hand;
+}
+.info{
+    -fx-text-alignment: center;
+}

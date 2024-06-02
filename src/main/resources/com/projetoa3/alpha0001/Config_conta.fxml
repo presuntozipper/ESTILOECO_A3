@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1370.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetoa3.alpha0001.Config_ContaController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="700.0" prefWidth="231.0" styleClass="dashPane" stylesheets="@design.css">
+               <children>
+                  <ImageView fitHeight="195.0" fitWidth="202.0" layoutX="19.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@AcervoIcone/NOMEGRUPO%20(2).png" />
+                     </image>
+                  </ImageView>
+                  <VBox layoutX="67.0" layoutY="218.0" prefHeight="259.0" prefWidth="141.0" spacing="15.0" styleClass="dashPane">
+                     <children>
+                        <Button fx:id="perfil" mnemonicParsing="false" prefHeight="30.0" prefWidth="119.0" styleClass="normal-btn" stylesheets="@design.css" text="perfil" />
+                        <Button fx:id="pagtoMet" mnemonicParsing="false" onAction="#metPagto" prefHeight="44.0" prefWidth="121.0" styleClass="normal-btn" text="Pagamento" />
+                        <Button fx:id="Doe" mnemonicParsing="false" onAction="#doacao" prefHeight="42.0" prefWidth="119.0" styleClass="normal-btn" stylesheets="@design.css" text="Doação" />
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="19.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@AcervoIcone/wallet.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="36.0" fitWidth="41.0" layoutX="19.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@AcervoIcone/profile-user.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="100.0" layoutX="114.0" layoutY="194.0" startX="-89.0" />
+                  <Button fx:id="Voltar" layoutX="80.0" layoutY="645.0" mnemonicParsing="false" onAction="#voltar" styleClass="voltar-btn" stylesheets="@design.css" text="Voltar" />
+                  <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="50.0" layoutY="643.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@AcervoIcone/voltar.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="39.0" fitWidth="45.0" layoutX="17.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@AcervoIcone/ecology.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="Menu" layoutX="24.0" layoutY="17.0" mnemonicParsing="false" onAction="#voltar" prefHeight="177.0" prefWidth="191.0" styleClass="menu-btn" stylesheets="@design.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="223.0" layoutY="34.0" prefHeight="645.0" prefWidth="1126.0" styleClass="backPanel" stylesheets="@design.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="59.0" prefWidth="111.0" text="Olá">
+                     <font>
+                        <Font size="41.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nomeLabel" layoutX="85.0" layoutY="14.0" prefHeight="59.0" prefWidth="571.0">
+                     <font>
+                        <Font name="Arial Italic" size="45.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="76.0" layoutY="83.0" prefHeight="36.0" prefWidth="140.0" text="Email atual:">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Label>
+                  <Label layoutX="63.0" layoutY="165.0" prefHeight="36.0" prefWidth="139.0" text="Senha atual:">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Label>
+                  <Label layoutX="61.0" layoutY="283.0" prefHeight="36.0" prefWidth="197.0" text="Telefone atual:">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Label>
+                  <Label fx:id="PassShow" layoutX="282.0" layoutY="169.0" prefHeight="24.0" prefWidth="251.0" visible="false">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="TelShow" layoutX="280.0" layoutY="286.0" prefHeight="26.0" prefWidth="260.0">
+                     <font>
+                        <Font name="Arial Italic" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="EmailShow" layoutX="281.0" layoutY="85.0" prefHeight="33.0" prefWidth="302.0">
+                     <font>
+                        <Font name="Arial Italic" size="18.0" />
+                     </font></Label>
+                  <Label layoutX="78.0" layoutY="121.0" prefHeight="30.0" prefWidth="116.0" text="Novo email:">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="NewSenha" disable="true" layoutX="284.0" layoutY="204.0" prefHeight="26.0" prefWidth="349.0" promptText="senha" />
+                  <Label layoutX="74.0" layoutY="216.0" prefHeight="28.0" prefWidth="244.0" text="Nova Senha:">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="NewEmail" disable="true" layoutX="284.0" layoutY="123.0" prefHeight="26.0" prefWidth="354.0" promptText="Email" />
+                  <TextField fx:id="NewTel" disable="true" layoutX="277.0" layoutY="332.0" prefHeight="38.0" prefWidth="349.0" promptText="Telefone" />
+                  <Label layoutX="71.0" layoutY="338.0" prefHeight="41.0" prefWidth="263.0" text="Adicionar telefone:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="74.0" layoutY="246.0" prefHeight="27.0" prefWidth="256.0" text="Confirmar senha">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="NewSenha1" disable="true" layoutX="284.0" layoutY="242.0" prefHeight="26.0" prefWidth="349.0" promptText="Nova senha" />
+                  <Label layoutX="660.0" layoutY="35.0" text="*Faça apenas uma alteração por vez para garantir que ocorra corretamente" />
+                  <Line endX="2.0" endY="2.0" layoutX="226.0" layoutY="85.0" startX="2.0" startY="315.0" />
+                  <Line endX="506.0" layoutX="177.0" layoutY="118.0" startX="-100.0" />
+                  <Line endX="514.0" layoutX="177.0" layoutY="197.0" startX="-109.0" />
+                  <Line endX="494.0" layoutX="199.0" layoutY="314.0" startX="-131.0" />
+                  <Line endX="494.0" layoutX="200.0" layoutY="404.0" startX="-131.0" />
+                  <Label layoutX="85.0" layoutY="420.0" prefHeight="36.0" prefWidth="197.0" text="Endereço:">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Cidade" disable="true" layoutX="85.0" layoutY="462.0" prefHeight="37.0" prefWidth="279.0" promptText="Cidade" />
+                  <Line endX="494.0" layoutX="210.0" layoutY="514.0" startX="-131.0" />
+                  <TextField fx:id="NumRes" disable="true" layoutX="84.0" layoutY="533.0" prefHeight="37.0" prefWidth="279.0" promptText="Numero" />
+                  <TextField fx:id="Logradouro" disable="true" layoutX="424.0" layoutY="533.0" prefHeight="37.0" prefWidth="279.0" promptText="Logradouro" />
+                  <RadioButton fx:id="alteraTel" layoutX="705.0" layoutY="323.0" mnemonicParsing="false" onAction="#alteraTel" text="Alterar" />
+                  <RadioButton fx:id="alteraSenha" layoutX="705.0" layoutY="215.0" mnemonicParsing="false" onAction="#alteraSenha" prefHeight="30.0" prefWidth="92.0" text="Alterar" />
+                  <RadioButton fx:id="alteraEmail" layoutX="705.0" layoutY="121.0" mnemonicParsing="false" onAction="#alteraEmail" text="Alterar" />
+                  <RadioButton fx:id="alteraCEP" layoutX="705.0" layoutY="466.0" mnemonicParsing="false" onAction="#alteraCEP" text="Alterar" />
+                  <Button fx:id="SalvarTel" layoutX="705.0" layoutY="364.0" mnemonicParsing="false" onAction="#AlterarTel" text="Salvar alterações" visible="false" />
+                  <Button fx:id="SalvarSenha" layoutX="705.0" layoutY="273.0" mnemonicParsing="false" onAction="#AlterarSenha" text="Salvar alterações" visible="false" />
+                  <Button fx:id="SalvarEmail" layoutX="705.0" layoutY="154.0" mnemonicParsing="false" onAction="#AlterarEmail" text="Salvar alterações" visible="false" />
+                  <Button fx:id="SalvarCEP" layoutX="717.0" layoutY="533.0" mnemonicParsing="false" onAction="#AlterarCEP" text="Salvar alterações" visible="false" />
+                  <Label fx:id="asterisco" layoutX="280.0" layoutY="169.0" prefHeight="18.0" prefWidth="239.0" text="****************">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cid" contentDisplay="CENTER" layoutX="492.0" layoutY="429.0" prefHeight="26.0" prefWidth="143.0">
+                     <styleClass>
+                        <String fx:value="produtc-pane" />
+                        <String fx:value="info" />
+                     </styleClass></Label>
+                  <Label fx:id="log" contentDisplay="CENTER" layoutX="209.0" layoutY="429.0" prefHeight="26.0" prefWidth="181.0" stylesheets="@design.css">
+                     <styleClass>
+                        <String fx:value="produtc-pane" />
+                        <String fx:value="info" />
+                     </styleClass></Label>
+                  <Label fx:id="estado" contentDisplay="CENTER" layoutX="641.0" layoutY="429.0" prefHeight="26.0" prefWidth="113.0" textAlignment="CENTER">
+                     <styleClass>
+                        <String fx:value="produtc-pane" />
+                        <String fx:value="info" />
+                     </styleClass></Label>
+                  <Label fx:id="num" contentDisplay="CENTER" layoutX="395.0" layoutY="429.0" prefHeight="27.0" prefWidth="95.0" stylesheets="@design.css">
+                     <styleClass>
+                        <String fx:value="produtc-pane" />
+                        <String fx:value="info" />
+                     </styleClass></Label>
+                  <ChoiceBox fx:id="escolheEstado" disable="true" layoutX="458.0" layoutY="475.0" prefWidth="150.0" />
+                  <Text fx:id="LogT" layoutX="224.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" underline="true" wrappingWidth="139.9830722808838" />
+                  <Text fx:id="numT" layoutX="405.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" underline="true" wrappingWidth="75.98307228088379" />
+                  <Text fx:id="cidT" layoutX="504.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" underline="true" wrappingWidth="118.98307228088379" />
+                  <Text fx:id="EstadoT" layoutX="651.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" underline="true" wrappingWidth="85.98307228088379" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="close" layoutX="1290.0" layoutY="2.0" minWidth="39.0" mnemonicParsing="false" onAction="#close" prefHeight="30.0" prefWidth="39.0" stylesheets="@design.css" text="X">
+               <styleClass>
+                  <String fx:value="close-btn" />
+                  <String fx:value="close-btn" />
+               </styleClass>
+            </Button>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

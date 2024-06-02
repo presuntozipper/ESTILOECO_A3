@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1370.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetoa3.alpha0001.PayMetodController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="700.0" prefWidth="231.0" styleClass="dashPane" stylesheets="@design.css">
+               <children>
+                  <ImageView fitHeight="195.0" fitWidth="202.0" layoutX="19.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@AcervoIcone/NOMEGRUPO%20(2).png" />
+                     </image>
+                  </ImageView>
+                  <VBox layoutX="67.0" layoutY="218.0" prefHeight="259.0" prefWidth="141.0" spacing="15.0" styleClass="dashPane">
+                     <children>
+                        <Button fx:id="perfil" mnemonicParsing="false" prefHeight="30.0" prefWidth="119.0" styleClass="normal-btn" stylesheets="@design.css" text="perfil" />
+                        <Button fx:id="pagtoMet" mnemonicParsing="false" prefHeight="44.0" prefWidth="121.0" styleClass="normal-btn" text="Pagamento" />
+                        <Button fx:id="Doe" mnemonicParsing="false" onAction="#doacao" prefHeight="42.0" prefWidth="119.0" styleClass="normal-btn" stylesheets="@design.css" text="Doação" />
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="19.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@AcervoIcone/wallet.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="36.0" fitWidth="41.0" layoutX="19.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@AcervoIcone/profile-user.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="100.0" layoutX="114.0" layoutY="194.0" startX="-89.0" />
+                  <Button fx:id="Voltar" layoutX="80.0" layoutY="645.0" mnemonicParsing="false" onAction="#voltar" styleClass="voltar-btn" stylesheets="@design.css" text="Voltar" />
+                  <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="50.0" layoutY="643.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@AcervoIcone/voltar.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="39.0" fitWidth="45.0" layoutX="17.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@AcervoIcone/ecology.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="Menu" layoutX="24.0" layoutY="17.0" mnemonicParsing="false" onAction="#voltar" prefHeight="177.0" prefWidth="191.0" styleClass="menu-btn" stylesheets="@design.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="217.0" layoutY="32.0" prefHeight="645.0" prefWidth="1126.0" styleClass="backPanel" stylesheets="@design.css">
+               <children>
+                  <Label layoutX="89.0" layoutY="44.0" prefHeight="59.0" prefWidth="111.0" text="Olá">
+                     <font>
+                        <Font size="41.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nomeLabel" layoutX="200.0" layoutY="44.0" prefHeight="59.0" prefWidth="571.0">
+                     <font>
+                        <Font name="Arial Italic" size="45.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="Pix" layoutX="113.0" layoutY="202.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="64.0" text="Pix" />
+                  <RadioButton disable="true" layoutX="113.0" layoutY="253.0" mnemonicParsing="false" text="Credito" />
+                  <RadioButton disable="true" layoutX="113.0" layoutY="299.0" mnemonicParsing="false" text="Debito" />
+                  <RadioButton fx:id="EcoCoin" layoutX="113.0" layoutY="350.0" mnemonicParsing="false" onAction="#pagar" prefHeight="30.0" prefWidth="111.0" text="ECO.Coins" />
+                  <RadioButton disable="true" layoutX="113.0" layoutY="396.0" mnemonicParsing="false" text="Boleto" />
+                  <Text layoutX="89.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suas ECO.Coins:" wrappingWidth="131.60025787353516">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="ShowCoins" layoutX="236.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="452.0">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Button fx:id="close" layoutX="1290.0" layoutY="2.0" minWidth="39.0" mnemonicParsing="false" onAction="#close" prefHeight="30.0" prefWidth="39.0" stylesheets="@design.css" text="X">
+               <styleClass>
+                  <String fx:value="close-btn" />
+                  <String fx:value="close-btn" />
+               </styleClass>
+            </Button>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
