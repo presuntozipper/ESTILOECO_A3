@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -27,10 +28,17 @@
       <RadioButton fx:id="Credito" disable="true" layoutX="194.0" layoutY="247.0" mnemonicParsing="false" text="Crédito" />
       <RadioButton fx:id="Debito" disable="true" layoutX="316.0" layoutY="247.0" mnemonicParsing="false" text="Debito" />
       <RadioButton fx:id="EcoCoins" layoutX="96.0" layoutY="297.0" mnemonicParsing="false" onAction="#Selectpagamento" prefHeight="30.0" prefWidth="110.0" text="ECO-Coins" />
-      <Button fx:id="Pagar" disable="true" layoutX="221.0" layoutY="449.0" mnemonicParsing="false" onAction="#pagar" styleClass="cadastro-btn" stylesheets="@design.css" text="PAGAR" />
-      <Text layoutX="84.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Endereço deve ser alterado previamente" />
+      <Button fx:id="Pagar" disable="true" layoutX="221.0" layoutY="484.0" mnemonicParsing="false" onAction="#pagar" styleClass="cadastro-btn" stylesheets="@design.css" text="PAGAR" />
+      <Text layoutX="14.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Endereço deve ser alterado previamente" />
       <Button fx:id="Voltar" layoutX="467.0" layoutY="2.0" mnemonicParsing="false" onAction="#voltar" styleClass="voltar-btn" stylesheets="@design.css" text="X" />
       <Text fx:id="coinLabel" layoutX="119.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suas ECOCOINS" visible="false" wrappingWidth="102.0" />
       <Text fx:id="coinText" layoutX="237.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" wrappingWidth="94.98307228088379" />
+      <Text layoutX="64.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Cupon:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField layoutX="182.0" layoutY="397.0" />
+      <Button layoutX="354.0" layoutY="395.0" mnemonicParsing="false" text="inserir" />
    </children>
 </AnchorPane>

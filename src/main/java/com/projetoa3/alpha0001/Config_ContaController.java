@@ -18,9 +18,12 @@ import javax.swing.*;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class Config_ContaController implements Initializable {
+    @FXML
+    private Button Cupons;
     @FXML
     RadioButton alteraCEP = new RadioButton("Alterar CEP");
     @FXML
@@ -298,12 +301,29 @@ public class Config_ContaController implements Initializable {
        stage.show();
 
     }
+    public void verCupons(ActionEvent event) throws IOException, SQLException {
+        if(dadosUsuario.getCupons() == null)
+        {erros.erroCupons();}
+        else
+        {
+            Cupons.getScene().getWindow();
+            Parent root = FXMLLoader.load(getClass().getResource("viewCupons.fxml"));
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.initStyle(StageStyle.TRANSPARENT);
+            stage.setScene(scene);
+            stage.show();
+        }
+    }
 
 
-    public void close()
-    {
+
+
+    public void close() {
         int resposta = JOptionPane.showConfirmDialog(null, "Você tem certeza se quer fechar o programa?", "confirmação", JOptionPane.YES_NO_OPTION);
        if(resposta == JOptionPane.YES_OPTION) { System.exit(0);}}
+
+
 
  }
 

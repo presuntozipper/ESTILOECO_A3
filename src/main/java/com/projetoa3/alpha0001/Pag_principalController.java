@@ -53,6 +53,7 @@ public class Pag_principalController  {
     }
 
    public void conta(ActionEvent event) throws IOException, SQLException {
+            dadosUsuario.setCupons(dadosUsuario.getIdUsuario());
             conta.getScene().getWindow().hide();
             Parent root = FXMLLoader.load(getClass().getResource("Config_conta.fxml"));
             Stage stage = new Stage();

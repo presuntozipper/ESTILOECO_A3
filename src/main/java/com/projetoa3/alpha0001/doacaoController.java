@@ -2,8 +2,9 @@ package com.projetoa3.alpha0001;
 
 import com.projetoa3.alpha0001.Principal.Produtos.Produto;
 
+import com.projetoa3.alpha0001.SQL.SQL;
 import com.projetoa3.alpha0001.Usuario.DadosUsuario;
-
+import com.projetoa3.alpha0001.Principal.Produtos.RandomGen;
 import javafx.beans.property.SimpleStringProperty;
 
 import javafx.event.ActionEvent;
@@ -17,12 +18,13 @@ import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 
+import javax.swing.*;
 import java.io.IOException;
 import java.net.URL;
 
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class doacaoController implements Initializable {
@@ -66,8 +68,10 @@ public class doacaoController implements Initializable {
     private Button Voltar;
     @FXML
     private Button insertItem;
+    String code;
     Erros erros = new Erros();
     DadosUsuario dadosUsuario = DadosUsuario.getInstance();
+    RandomGen  randon = RandomGen.getInstance();
 
 
     public void addLista(ActionEvent event) throws IOException {
@@ -81,8 +85,10 @@ public class doacaoController implements Initializable {
      }
 
 
-    public void Cupon(ActionEvent event)throws IOException{
-        dadosUsuario.getCodigo();
+    public void Cupon(ActionEvent event) throws IOException, SQLException {
+        code = String.valueOf(randon.genCode());
+        SQL.sqlInsertCupom(dadosUsuario.getIdUsuario(), code);
+        JOptionPane.showConfirmDialog(null,"Doação registrada com sucesso!"+'\n'+"Cupon: "+ code ,"Cupon",JOptionPane.PLAIN_MESSAGE);
     }
 
 

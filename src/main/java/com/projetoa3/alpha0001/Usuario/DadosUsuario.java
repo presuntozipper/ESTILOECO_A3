@@ -4,6 +4,7 @@ import com.projetoa3.alpha0001.SQL.SQL;
 import javafx.collections.ObservableList;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import static com.projetoa3.alpha0001.SQL.SQL.*;
 
@@ -20,34 +21,28 @@ public class DadosUsuario {
     private String numero;
     private String estado;
     private String codigo;
+    private ArrayList<String> cupons = new ArrayList();
     private String temp;
     private String creditos;
     private DadosUsuario() {}
+    public static DadosUsuario getInstance() {
+            return instance;
+        }
 
     public  void setCredit(String credit) throws SQLException {
         creditos = SQL.sqlgetCredit(credit);
     }
+
     public String getCreditos() {
         return creditos;
     }
+
     public String getTemp() {
         return temp;
     }
 
     public void setTemp(String temp) {
         this.temp = temp;
-    }
-
-    public static DadosUsuario getInstance() {
-        return instance;
-    }
-
-    public String getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
     }
 
     public String getUsuario() {
@@ -141,5 +136,12 @@ public class DadosUsuario {
         this.estado = estado;
     }
 
+    public void setCupons(String idUsuario) throws SQLException {
+        cupons.addAll(SQL.sqlgetCupom(idUsuario));
+    }
+
+    public ArrayList getCupons(){
+        return cupons ;
+    }
 
 }

@@ -2,19 +2,16 @@ package com.projetoa3.alpha0001.SQL;
 
 import com.projetoa3.alpha0001.ConnectDb;
 import com.projetoa3.alpha0001.Erros;
-import com.projetoa3.alpha0001.Principal.Produtos.Produto;
 import com.projetoa3.alpha0001.Usuario.DadosUsuario;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.List;
 
 public class SQL {
 public static Erros erros = new Erros();
 static DadosUsuario dados = DadosUsuario.getInstance();
+private static ArrayList cupons = new ArrayList();
 
     public static void sqlInsert(String username, String estado) {
           PreparedStatement ps;
@@ -153,7 +150,6 @@ static DadosUsuario dados = DadosUsuario.getInstance();
     public static String sqlgetCredit(String credito)throws SQLException {
         String sql = "SELECT creditoUsuario from usuario WHERE emailUsuario=?";
         PreparedStatement statement = ConnectDb.getConnection().prepareStatement(sql);
-        System.out.println(sql);
         statement.setString(1, credito);
         ResultSet rs = statement.executeQuery();
         while (rs.next()) {credito = rs.getString("creditoUsuario");
@@ -272,18 +268,17 @@ static DadosUsuario dados = DadosUsuario.getInstance();
         return cidade;
     }
 
-    public static boolean sqlInsertCredito(double res,String usuario) throws SQLException {
+    public static void sqlInsertCredito(double res, String usuario) throws SQLException {
        String sql = "update usuario set creditoUsuario=? where idUsuario=?";
         PreparedStatement statement = ConnectDb.getConnection().prepareStatement(sql);
         statement.setString(1, String.valueOf(res));
         statement.setString(2,sqlGetID(dados.getIdUsuario()));
         statement.executeUpdate();
         statement.close();
-        return true;
 
     }
-    public static boolean sqlPedido(String idUsuario, Timestamp horas) throws SQLException {
-         PreparedStatement ps;
+    public static void sqlPedido(String idUsuario, Timestamp horas) throws SQLException {
+          PreparedStatement ps;
           String sql = "insert into pedidos (DataeHora,CEP,userID,Estado,cidade,numero,Logradouro) values (?,(select cepUsuario from endereço where idUsuario = ?),(select idUsuario from usuario where idUsuario = ?),(select SiglaEstados from endereço where idUsuario = ?),(select cidade from endereço where idUsuario = ?),(select numero from endereço where idUsuario = ?),(select Logradouro from endereço where idUsuario = ?)) ";
           try {
             ps = ConnectDb.getConnection().prepareStatement(sql);
@@ -300,7 +295,34 @@ static DadosUsuario dados = DadosUsuario.getInstance();
             System.out.println("Inserido com sucesso");
         } catch (SQLException e) {throw new RuntimeException(e);}
 
-        return false;
     }
+    public static void sqlInsertCupom(String usuario,String cod)throws SQLException{
+          PreparedStatement ps;
+          String sql = "insert into cupons (Cupom,idUsuario) values (?,(select idUsuario from usuario where idUsuario = ?)) ";
+          try {
+            ps = ConnectDb.getConnection().prepareStatement(sql);
+            ps.setString(1, cod);
+            ps.setString(2, usuario);
+
+            ps.executeUpdate();
+            ps.close();
+            System.out.println("Inserido com sucesso");
+        } catch (SQLException e) {throw new RuntimeException(e);}
+    }
+
+    public static ArrayList sqlgetCupom(String idUsuario) throws SQLException{
+        String sql = "SELECT Cupom from cupons WHERE idUsuario=?";
+        String Cupom = "";
+        PreparedStatement statement = ConnectDb.getConnection().prepareStatement(sql);
+        statement.setString(1,idUsuario );
+        ResultSet rs = statement.executeQuery();
+        while (rs.next()) {Cupom = rs.getString("Cupom");
+              cupons.add(Cupom);
+        }
+        rs.close();
+        statement.close();
+        return cupons;
+    }
+
 
 }

@@ -22,8 +22,12 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
-public class Prod_Controller {
+public class Prod_Controller implements Initializable {
 
+    @FXML
+    private Text NomeProduto;
+    @FXML
+    private Text preco;
     @FXML
     private Button Doe;
 
@@ -116,4 +120,9 @@ public void sair(ActionEvent actionEvent) throws IOException {
    }
 
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        preco.setText("R$ 159.99");
+        NomeProduto.setText("Calça Jeans");
+    }
 }
