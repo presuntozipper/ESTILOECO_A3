@@ -69,16 +69,14 @@
                      </children>
                   </AnchorPane>
                   <Pane prefHeight="25.0" prefWidth="1200.0" />
-                  <Text fx:id="NomeProduto" layoutX="876.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="377.4375">
-                     <font>
-                        <Font size="38.0" />
-                     </font></Text>
-                  <Text fx:id="preco" fill="#657953" layoutX="891.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="257.0">
+                  <Text layoutX="964.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nome produto" wrappingWidth="253.4375" />
+                  <Text fill="#657953" layoutX="950.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="preço">
                      <font>
                         <Font size="52.0" />
                      </font>
                   </Text>
-                  <Button fx:id="addCarrinho" layoutX="950.0" layoutY="464.0" mnemonicParsing="false" onAction="#addList" styleClass="normal-btn" stylesheets="@design.css" text="adicionar ao carrinho" />
+                  <Button fx:id="addCarrinho" layoutX="989.0" layoutY="419.0" mnemonicParsing="false" onAction="#addList" text="adicionar ao carrinho" />
+                  <Button fx:id="close" layoutX="1290.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" styleClass="close-btn" stylesheets="@design.css" text="X" />
                </children>
             </AnchorPane>
          </center>
