@@ -180,6 +180,5 @@ public void sair(ActionEvent actionEvent) throws IOException {
     public void initialize(URL location, ResourceBundle resources) {
         listPreco.getItems().addAll(String.valueOf(c.percloratodepotassio()));
         listaCarrinho.getItems().addAll(c.getCarrinho());
-
     }
 }
