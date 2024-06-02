@@ -45,4 +45,11 @@ public class Erros {
             alert.setContentText("Creditos insuficientes");
             alert.showAndWait();
     }
+    public void erroCupons(){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Erro");
+            alert.setHeaderText(null);
+            alert.setContentText("Sem cupons");
+            alert.showAndWait();
+    }
 }

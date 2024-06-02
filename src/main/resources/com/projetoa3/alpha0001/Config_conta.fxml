@@ -32,6 +32,7 @@
                         <Button fx:id="perfil" mnemonicParsing="false" prefHeight="30.0" prefWidth="119.0" styleClass="normal-btn" stylesheets="@design.css" text="perfil" />
                         <Button fx:id="pagtoMet" mnemonicParsing="false" onAction="#metPagto" prefHeight="44.0" prefWidth="121.0" styleClass="normal-btn" text="Pagamento" />
                         <Button fx:id="Doe" mnemonicParsing="false" onAction="#doacao" prefHeight="42.0" prefWidth="119.0" styleClass="normal-btn" stylesheets="@design.css" text="Doação" />
+                        <Button fx:id="Cupons" mnemonicParsing="false" onAction="#verCupons" prefHeight="30.0" prefWidth="121.0" styleClass="normal-btn" stylesheets="@design.css" text="Cupons" />
                      </children>
                   </VBox>
                   <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="19.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
@@ -57,6 +58,10 @@
                      </image>
                   </ImageView>
                   <Button fx:id="Menu" layoutX="24.0" layoutY="17.0" mnemonicParsing="false" onAction="#voltar" prefHeight="177.0" prefWidth="191.0" styleClass="menu-btn" stylesheets="@design.css" />
+                  <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="18.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@AcervoIcone/codigo-promocional.png" />
+                     </image></ImageView>
                </children>
             </AnchorPane>
             <AnchorPane layoutX="223.0" layoutY="34.0" prefHeight="645.0" prefWidth="1126.0" styleClass="backPanel" stylesheets="@design.css">
