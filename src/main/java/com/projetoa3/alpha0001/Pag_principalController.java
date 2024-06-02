@@ -19,6 +19,8 @@ import java.sql.SQLException;
 
 public class Pag_principalController  {
     @FXML
+    private Button close;
+    @FXML
     private Stage stage;
 
     @FXML
@@ -99,5 +101,8 @@ public void sair(ActionEvent actionEvent) throws IOException {
            stage.show();
        }
    }
+
+  public void close()
+    {System.exit(0);}
 }
 
