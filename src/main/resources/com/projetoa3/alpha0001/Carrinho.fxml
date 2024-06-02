@@ -87,6 +87,7 @@
                      </children>
                   </AnchorPane>
                   <Pane prefHeight="25.0" prefWidth="1200.0" />
+                  <Button fx:id="close" layoutX="1302.0" layoutY="10.0" mnemonicParsing="false" onAction="#close" styleClass="close-btn" stylesheets="@design.css" text="X" />
                </children>
             </AnchorPane>
          </center>

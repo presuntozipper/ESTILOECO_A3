@@ -28,6 +28,8 @@ public class CarrinhoController implements Initializable {
     Carrinho c = Carrinho.getInstance();
     Erros erros = new Erros();
     @FXML
+    private Button close;
+    @FXML
     private TableColumn<Produto, Integer> id;
     @FXML
     private TableColumn<Produto, String> nomeProduct;
@@ -171,6 +173,8 @@ public void sair(ActionEvent actionEvent) throws IOException {
            stage.show();
        }
    }
+   public void close()
+    {System.exit(0);}
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

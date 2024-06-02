@@ -11,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import javax.swing.*;
 import java.io.IOException;
@@ -59,6 +60,7 @@ public class LoginController extends Config_ContaController   implements Initial
                 Login.getScene().getWindow().hide();
                 Stage stage = new Stage();
                 Scene scene = new Scene(root);
+                stage.initStyle(StageStyle.TRANSPARENT);
                 stage.setScene(scene);
                 stage.show();
                 System.out.println(".Fxml Carregado com sucesso");
@@ -75,6 +77,7 @@ public class LoginController extends Config_ContaController   implements Initial
         if(root != null){
             Stage stage = new Stage();
             Scene scene = new Scene(root);
+            stage.initStyle(StageStyle.TRANSPARENT);
             stage.setScene(scene);
             stage.show();
         }else{erros.erroFXML();}

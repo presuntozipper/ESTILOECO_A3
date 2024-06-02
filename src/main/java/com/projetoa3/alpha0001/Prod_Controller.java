@@ -23,6 +23,8 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class Prod_Controller {
+    @FXML
+    private Button close;
 
     @FXML
     private Button Doe;
@@ -101,9 +103,7 @@ public class Prod_Controller {
     }
 
 public void sair(ActionEvent actionEvent) throws IOException {
-       int resposta = JOptionPane.showConfirmDialog(null,"Você tem certeza se quer sair?","confirmação",JOptionPane.YES_NO_OPTION);
-       if(resposta == JOptionPane.YES_OPTION)
-       {
+
            FXMLLoader loader = new FXMLLoader(getClass().getResource("Pag_principal"));
            Parent root = loader.load();
            voltar.getScene().getWindow().hide();
@@ -112,8 +112,9 @@ public void sair(ActionEvent actionEvent) throws IOException {
            stage.initStyle(StageStyle.TRANSPARENT);
            stage.setScene(scene);
            stage.show();
-       }
-   }
 
+   }
+    public void close()
+        {System.exit(0);}
 
 }
