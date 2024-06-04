@@ -26,8 +26,6 @@ public class CadastroController implements Initializable {
     @FXML
     private Stage stage;
     @FXML
-    private Button bypass;
-    @FXML
     private TextField cep;
     @FXML
     private ChoiceBox<String> escolheEstado = new ChoiceBox<>();
@@ -88,20 +86,6 @@ public class CadastroController implements Initializable {
         stage.setScene(scene);
         stage.show();}
         else{erros.erroFXML();}}
-    }
-
-
-    @FXML
-    void mudar_pag(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Verificacao.fxml"));
-        Parent root = loader.load();
-        bypass.getScene().getWindow().hide();
-        if(root != null){
-            Stage stage = new Stage();
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-        }else{System.err.println("Erro ao carregar FXML");}
     }
 
     @FXML

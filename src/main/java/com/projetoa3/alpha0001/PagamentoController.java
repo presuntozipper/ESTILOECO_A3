@@ -73,7 +73,7 @@ public class PagamentoController implements Initializable {
                 //inserir o valor de res no banco de dados e finalizar a compra
                 SQL.sqlInsertCredito(res, dadosUsuario.getIdUsuario());
                 Timestamp dataHora = Timestamp.valueOf(now);
-                SQL.sqlPedido(dadosUsuario.getIdUsuario(),dataHora);
+                SQL.sqlPedido(dadosUsuario.getIdUsuario(),dataHora,c.Pedido());
                 c.clear();
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("CompraReal.fxml"));
                 Parent root = loader.load();

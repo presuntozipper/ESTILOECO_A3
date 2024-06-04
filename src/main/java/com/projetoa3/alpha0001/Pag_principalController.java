@@ -18,6 +18,19 @@ import java.sql.SQLException;
 
 
 public class Pag_principalController  {
+     @FXML
+    private Button BermudasJeans;
+     @FXML
+    private Button JaquetaJeans;
+
+    @FXML
+    private Button SaiaJeans;
+    @FXML
+    private Button macacaoJeans;
+
+    @FXML
+    private Button shortsJeans;
+
     @FXML
     private Button close;
     @FXML
@@ -44,7 +57,7 @@ public class Pag_principalController  {
     private BorderPane mainPane;
     DadosUsuario dadosUsuario = DadosUsuario.getInstance();
 
-    public void produto() throws IOException {
+    public void calcaJeans() throws IOException {
             calcaJe.getScene().getWindow().hide();
             Parent root = FXMLLoader.load(getClass().getResource("Pag_prod.fxml"));
             Stage stage = new Stage();
@@ -53,6 +66,52 @@ public class Pag_principalController  {
             stage.initStyle(StageStyle.TRANSPARENT);
             stage.show();
     }
+     public void saiaJeans() throws IOException {
+            SaiaJeans.getScene().getWindow().hide();
+            Parent root = FXMLLoader.load(getClass().getResource("Saia.fxml"));
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.initStyle(StageStyle.TRANSPARENT);
+            stage.show();
+    }
+     public void bermudaJeans() throws IOException {
+            BermudasJeans.getScene().getWindow().hide();
+            Parent root = FXMLLoader.load(getClass().getResource("Bermuda.fxml"));
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.initStyle(StageStyle.TRANSPARENT);
+            stage.show();
+    }
+     public void shortsJeans() throws IOException {
+            shortsJeans.getScene().getWindow().hide();
+            Parent root = FXMLLoader.load(getClass().getResource("Shorts.fxml"));
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.initStyle(StageStyle.TRANSPARENT);
+            stage.show();
+    }
+     public void JaquetaJeans() throws IOException {
+            JaquetaJeans.getScene().getWindow().hide();
+            Parent root = FXMLLoader.load(getClass().getResource("Jaqueta.fxml"));
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.initStyle(StageStyle.TRANSPARENT);
+            stage.show();
+    }
+     public void macacoJeans() throws IOException {
+            macacaoJeans.getScene().getWindow().hide();
+            Parent root = FXMLLoader.load(getClass().getResource("Macacao.fxml"));
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.initStyle(StageStyle.TRANSPARENT);
+            stage.show();
+    }
+
 
    public void conta(ActionEvent event) throws IOException, SQLException {
             dadosUsuario.setCupons(dadosUsuario.getIdUsuario());

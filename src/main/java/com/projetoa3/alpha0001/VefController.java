@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 import javafx.scene.control.Button;
 
 import java.io.IOException;
-
+import java.sql.SQLException;
 
 
 public class VefController {
@@ -26,7 +26,8 @@ public class VefController {
     private ImageView concluido;
     DadosUsuario dadosUsuario = DadosUsuario.getInstance();
     @FXML
-    void mudar_pag(ActionEvent event) throws IOException {
+    void mudar_pag(ActionEvent event) throws IOException, SQLException {
+         SQL.sqlECOCOINS(dadosUsuario.getIdUsuario());
          SQL.sqlInsert(dadosUsuario.getIdUsuario(), dadosUsuario.getTemp());
         FXMLLoader loader = new FXMLLoader(getClass().getResource("NewLogin.fxml"));
         Parent root = loader.load();
