@@ -44,7 +44,6 @@
       <TextField fx:id="nome" layoutX="304.0" layoutY="171.0" promptText="Nome" />
       <Text layoutX="303.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome completo" />
       <Text layoutX="304.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEP" wrappingWidth="118.13671875" />
-      <Button fx:id="bypass" layoutX="477.0" layoutY="405.0" mnemonicParsing="false" onAction="#mudar_pag" text="bypass" />
       <Hyperlink layoutX="55.0" layoutY="310.0" text="support.ecoes@gmail.com" />
       <Text layoutX="51.0" layoutY="271.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Se houver problemas no cadastro contate o suporte" textAlignment="CENTER" wrappingWidth="152.0" />
       <ChoiceBox fx:id="escolheEstado" layoutX="305.0" layoutY="251.0" prefWidth="150.0" />

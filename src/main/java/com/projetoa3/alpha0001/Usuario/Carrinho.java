@@ -1,5 +1,7 @@
 package com.projetoa3.alpha0001.Usuario;
 
+import com.projetoa3.alpha0001.SQL.SQL;
+
 import java.util.ArrayList;
 
 public class Carrinho{
@@ -11,9 +13,18 @@ public class Carrinho{
     public static Carrinho getInstance(){
         return instance;
     }
-
+    public static String pedido = "";
     public Carrinho() {
     }
+
+    public String Pedido(){
+        for(int i = 0; i < carrinho.size(); i++){
+            pedido += carrinho.get(i) +", " ;
+        }
+        pedido = pedido.substring(0, pedido.length()-2);
+      return pedido;
+    }
+
     public double percloratodepotassio(){
         itemCarrinho = 0;
         for(int i = 0; i < valores.size(); i++){

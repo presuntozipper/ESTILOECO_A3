@@ -277,9 +277,9 @@ private static ArrayList cupons = new ArrayList();
         statement.close();
 
     }
-    public static void sqlPedido(String idUsuario, Timestamp horas) throws SQLException {
+    public static void sqlPedido(String idUsuario, Timestamp horas,String pedido) throws SQLException {
           PreparedStatement ps;
-          String sql = "insert into pedidos (DataeHora,CEP,userID,Estado,cidade,numero,Logradouro) values (?,(select cepUsuario from endereço where idUsuario = ?),(select idUsuario from usuario where idUsuario = ?),(select SiglaEstados from endereço where idUsuario = ?),(select cidade from endereço where idUsuario = ?),(select numero from endereço where idUsuario = ?),(select Logradouro from endereço where idUsuario = ?)) ";
+          String sql = "insert into pedidos (DataeHora,CEP,userID,Estado,cidade,numero,Logradouro,descricaoPedido) values (?,(select cepUsuario from endereço where idUsuario = ?),(select idUsuario from usuario where idUsuario = ?),(select SiglaEstados from endereço where idUsuario = ?),(select cidade from endereço where idUsuario = ?),(select numero from endereço where idUsuario = ?),(select Logradouro from endereço where idUsuario = ?),?) ";
           try {
             ps = ConnectDb.getConnection().prepareStatement(sql);
             ps.setTimestamp(1, horas);
@@ -289,6 +289,7 @@ private static ArrayList cupons = new ArrayList();
             ps.setString(5, idUsuario);
             ps.setString(6, idUsuario);
             ps.setString(7, idUsuario);
+            ps.setString(8, pedido);
 
             ps.executeUpdate();
             ps.close();
@@ -296,6 +297,7 @@ private static ArrayList cupons = new ArrayList();
         } catch (SQLException e) {throw new RuntimeException(e);}
 
     }
+
     public static void sqlInsertCupom(String usuario,String cod)throws SQLException{
           PreparedStatement ps;
           String sql = "insert into cupons (Cupom,idUsuario) values (?,(select idUsuario from usuario where idUsuario = ?)) ";
@@ -323,6 +325,30 @@ private static ArrayList cupons = new ArrayList();
         statement.close();
         return cupons;
     }
+    public static void sqlECOCOINS(String usuario)throws SQLException{
+          PreparedStatement ps;
+          String sql = "insert into usuario (creditoUsuario) value (10000) ";
+          try {
+            ps = ConnectDb.getConnection().prepareStatement(sql);
+            ps.setString(1, usuario);
 
+            ps.executeUpdate();
+            ps.close();
+            System.out.println("Inserido com sucesso");
+        } catch (SQLException e) {throw new RuntimeException(e);}
+    }
+
+    public static void sqlInsertPedido(String pedido){
+        PreparedStatement ps;
+          String sql = "insert into pedidos (descricaoPedido) value (?) ";
+          try {
+            ps = ConnectDb.getConnection().prepareStatement(sql);
+            ps.setString(1, pedido);
+
+            ps.executeUpdate();
+            ps.close();
+            System.out.println("Inserido com sucesso");
+        } catch (SQLException e) {throw new RuntimeException(e);}
+    }
 
 }

@@ -1,6 +1,5 @@
-package com.projetoa3.alpha0001;
+package com.projetoa3.alpha0001.Principal.Produtos;
 
-import com.projetoa3.alpha0001.Principal.Produtos.Produto;
 import com.projetoa3.alpha0001.Usuario.Carrinho;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -10,7 +9,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.ListView;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Text;
@@ -23,8 +21,8 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
-public class Prod_Controller implements Initializable {
-    @FXML
+public class BermudaController implements Initializable {
+     @FXML
     private ChoiceBox<String> escolheTam;
     @FXML
     private Text NomeProduto;
@@ -64,7 +62,7 @@ public class Prod_Controller implements Initializable {
     Produto prod = Produto.getInstance();
     public void addList(ActionEvent event) throws IOException {
         itemID = 1;
-        nomeItem = "Calça Jeans,tamanho: " + escolheTam.getValue(); ;
+        nomeItem = "Bermuda Jeans ,tamanho: " + escolheTam.getValue(); ;
         value = 159.99;
       prod.produto(itemID,nomeItem, value);
       c.addValCarrinho(value);

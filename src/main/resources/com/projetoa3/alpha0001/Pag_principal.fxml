@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="700.0" prefWidth="1370.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetoa3.alpha0001.Pag_principalController">
    <children>
@@ -19,21 +20,21 @@
          <center>
             <AnchorPane prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
                <children>
-                  <AnchorPane layoutX="267.0" layoutY="75.0" prefHeight="585.0" prefWidth="1056.0" styleClass="backPanel" stylesheets="@design.css">
+                  <AnchorPane layoutX="267.0" layoutY="40.0" prefHeight="620.0" prefWidth="1056.0" styleClass="backPanel" stylesheets="@design.css">
                      <children>
-                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="242.0" prefHeight="37.0" prefWidth="146.0" styleClass="btn-product" text="Calças Jeans">
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="249.0" prefHeight="37.0" prefWidth="146.0" styleClass="btn-product" text="Calças Jeans">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Label>
-                      <AnchorPane layoutX="43.0" layoutY="20.0" minHeight="0.0" minWidth="0.0" prefHeight="208.0" prefWidth="165.0" styleClass="produtc-pane" stylesheets="@design.css">
+                      <AnchorPane layoutX="43.0" layoutY="20.0" minHeight="0.0" minWidth="0.0" prefHeight="225.0" prefWidth="165.0" styleClass="produtc-pane" stylesheets="@design.css">
                            <children>
-                              <ImageView id="teste" fx:id="teste" fitHeight="166.0" fitWidth="107.0" layoutX="32.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView id="teste" fx:id="teste" fitHeight="176.0" fitWidth="121.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@AcervoIcone/5a21ed75c23ed9.4736620815121729177956.png" />
+                                    <Image url="@AcervoIcone/jeansmasculino-removebg-preview.png" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="calcaJe" alignment="CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="5.0" layoutX="2.0" layoutY="3.0" mnemonicParsing="false" onAction="#produto" opacity="0.0" prefHeight="202.0" prefWidth="161.0" stylesheets="@design.css">
+                              <Button fx:id="calcaJe" alignment="CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="5.0" layoutX="6.0" layoutY="9.0" mnemonicParsing="false" onAction="#calcaJeans" opacity="0.0" prefHeight="207.0" prefWidth="153.0" stylesheets="@design.css">
                                  <cursor>
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
@@ -43,6 +44,116 @@
                               </Button>
                            </children>
                         </AnchorPane>
+                        <AnchorPane layoutX="304.0" layoutY="20.0" minHeight="0.0" minWidth="0.0" prefHeight="227.0" prefWidth="165.0" styleClass="produtc-pane" stylesheets="@design.css">
+                           <children>
+                              <ImageView id="teste" fx:id="teste1" fitHeight="165.0" fitWidth="145.0" layoutX="8.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@AcervoIcone/imagem_2024-06-03_160542509-removebg-preview.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="shortsJeans" alignment="CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="5.0" layoutX="2.0" mnemonicParsing="false" onAction="#shortsJeans" opacity="0.0" prefHeight="225.0" prefWidth="161.0" stylesheets="@design.css">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="566.0" layoutY="20.0" minHeight="0.0" minWidth="0.0" prefHeight="224.0" prefWidth="165.0" styleClass="produtc-pane" stylesheets="@design.css">
+                           <children>
+                              <ImageView id="teste" fx:id="teste2" fitHeight="192.0" fitWidth="139.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@AcervoIcone/imagem_2024-06-03_161123843-removebg-preview.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="JaquetaJeans" alignment="CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="5.0" layoutX="2.0" layoutY="11.0" mnemonicParsing="false" onAction="#JaquetaJeans" opacity="0.0" prefHeight="202.0" prefWidth="161.0" stylesheets="@design.css">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="846.0" layoutY="20.0" minHeight="0.0" minWidth="0.0" prefHeight="218.0" prefWidth="165.0" styleClass="produtc-pane" stylesheets="@design.css">
+                           <children>
+                              <ImageView id="teste" fx:id="teste3" fitHeight="134.0" fitWidth="159.0" layoutX="8.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@AcervoIcone/imagem_2024-06-03_162016109-removebg-preview.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="SaiaJeans" alignment="CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="5.0" layoutX="2.0" layoutY="8.0" mnemonicParsing="false" onAction="#saiaJeans" opacity="0.0" prefHeight="202.0" prefWidth="161.0" stylesheets="@design.css">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="43.0" layoutY="310.0" minHeight="0.0" minWidth="0.0" prefHeight="230.0" prefWidth="165.0" styleClass="produtc-pane" stylesheets="@design.css">
+                           <children>
+                              <ImageView id="teste" fx:id="teste4" fitHeight="173.0" fitWidth="135.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@AcervoIcone/imagem_2024-06-03_193916857-removebg-preview.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="BermudasJeans" alignment="CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="5.0" layoutX="-3.0" mnemonicParsing="false" onAction="#bermudaJeans" opacity="0.0" prefHeight="202.0" prefWidth="161.0" stylesheets="@design.css">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="305.0" layoutY="310.0" minHeight="0.0" minWidth="0.0" prefHeight="231.0" prefWidth="165.0" styleClass="produtc-pane" stylesheets="@design.css">
+                           <children>
+                              <ImageView id="teste" fx:id="teste5" fitHeight="274.0" fitWidth="176.0" layoutX="2.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@AcervoIcone/imagem_2024-06-03_194808835-removebg-preview.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="macacaoJeans" alignment="CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="5.0" layoutX="2.0" layoutY="3.0" mnemonicParsing="false" onAction="#macacoJeans" opacity="0.0" prefHeight="204.0" prefWidth="161.0" stylesheets="@design.css">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="314.0" layoutY="251.0" prefHeight="37.0" prefWidth="146.0" styleClass="btn-product" text="Shorts Jeans">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="576.0" layoutY="249.0" prefHeight="37.0" prefWidth="146.0" styleClass="btn-product" text="Jaqueta Jeans">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="856.0" layoutY="242.0" prefHeight="37.0" prefWidth="146.0" styleClass="btn-product" text="Saia Jeans">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="549.0" prefHeight="37.0" prefWidth="146.0" styleClass="btn-product" text="Bermuda Jeans">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="314.0" layoutY="549.0" prefHeight="37.0" prefWidth="146.0" styleClass="btn-product" text="Macacão Jeans">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
                      </children></AnchorPane>
                   <AnchorPane layoutY="7.0" prefHeight="684.0" prefWidth="253.0" styleClass="dashPane" stylesheets="@design.css">
                      <children>
@@ -84,6 +195,7 @@
                               <Image url="@AcervoIcone/ecology.png" />
                            </image>
                         </ImageView>
+                        <Text layoutX="18.0" layoutY="675.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*versão 0.8 " />
                      </children>
                   </AnchorPane>
                   <Pane prefHeight="25.0" prefWidth="1200.0" />
