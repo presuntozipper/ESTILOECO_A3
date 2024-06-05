@@ -74,11 +74,13 @@ public class Prod_Controller implements Initializable {
     }
 
 
-   public void conta(ActionEvent event) throws IOException, SQLException {
+     public void conta(ActionEvent event) throws IOException, SQLException {
+
             conta.getScene().getWindow().hide();
             Parent root = FXMLLoader.load(getClass().getResource("Config_conta.fxml"));
             Stage stage = new Stage();
             Scene scene = new Scene(root);
+
             stage.setScene(scene);
             stage.initStyle(StageStyle.TRANSPARENT);
             stage.show();
@@ -95,6 +97,7 @@ public class Prod_Controller implements Initializable {
             stage.show();
 
     }
+
     public void doacao(ActionEvent event)throws IOException{
        Doe.getScene().getWindow();
        Parent root = FXMLLoader.load(getClass().getResource("newDoacao.fxml"));
@@ -107,10 +110,8 @@ public class Prod_Controller implements Initializable {
     }
 
 public void sair(ActionEvent actionEvent) throws IOException {
-       int resposta = JOptionPane.showConfirmDialog(null,"Você tem certeza se quer sair?","confirmação",JOptionPane.YES_NO_OPTION);
-       if(resposta == JOptionPane.YES_OPTION)
-       {
-           FXMLLoader loader = new FXMLLoader(getClass().getResource("Pag_principal"));
+
+           FXMLLoader loader = new FXMLLoader(getClass().getResource("Pag_principal.fxml"));
            Parent root = loader.load();
            voltar.getScene().getWindow().hide();
            Stage stage = new Stage();
@@ -118,7 +119,7 @@ public void sair(ActionEvent actionEvent) throws IOException {
            stage.initStyle(StageStyle.TRANSPARENT);
            stage.setScene(scene);
            stage.show();
-       }
+
    }
     @FXML
     void close(){

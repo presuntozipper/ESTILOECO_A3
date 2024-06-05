@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="700.0" prefWidth="1370.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetoa3.alpha0001.Principal.Produtos.ShortsController">
+<AnchorPane prefHeight="700.0" prefWidth="1370.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetoa3.alpha0001.ShortsController">
    <children>
       <BorderPane fx:id="mainPane" prefHeight="200.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <center>
@@ -21,9 +21,9 @@
                <children>
                   <AnchorPane layoutX="442.0" layoutY="103.0" prefHeight="439.0" prefWidth="365.0" styleClass="backPanel" stylesheets="@design.css">
                      <children>
-                        <ImageView id="teste" fx:id="teste" fitHeight="352.0" fitWidth="240.0" layoutX="60.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView id="teste" fx:id="teste" fitHeight="328.0" fitWidth="317.0" layoutX="24.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@AcervoIcone/jeansmasculino-removebg-preview.png" />
+                              <Image url="@AcervoIcone/imagem_2024-06-03_160542509-removebg-preview.png" />
                            </image>
                         </ImageView>
                      </children></AnchorPane>
@@ -70,7 +70,7 @@
                      </children>
                   </AnchorPane>
                   <Pane prefHeight="25.0" prefWidth="1200.0" />
-                  <Text layoutX="860.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JEANS MASCULINO" wrappingWidth="384.4375">
+                  <Text layoutX="843.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shorts Jeans Feminino" wrappingWidth="430.4375">
                      <font>
                         <Font size="40.0" />
                      </font></Text>

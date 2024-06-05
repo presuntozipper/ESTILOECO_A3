@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -9,11 +10,6 @@
 
 <AnchorPane prefHeight="559.0" prefWidth="519.0" styleClass="backPanel" stylesheets="@design.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetoa3.alpha0001.PagamentoController">
    <children>
-      <Text fx:id="total" layoutX="170.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" underline="true" wrappingWidth="304.0">
-         <font>
-            <Font size="28.0" />
-         </font>
-      </Text>
       <Text layoutX="116.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Metodo de pagamento">
          <font>
             <Font size="28.0" />
@@ -33,12 +29,19 @@
       <Button fx:id="Voltar" layoutX="467.0" layoutY="2.0" mnemonicParsing="false" onAction="#voltar" styleClass="voltar-btn" stylesheets="@design.css" text="X" />
       <Text fx:id="coinLabel" layoutX="119.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suas ECOCOINS" visible="false" wrappingWidth="102.0" />
       <Text fx:id="coinText" layoutX="237.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" wrappingWidth="94.98307228088379" />
-      <Text layoutX="64.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Cupon:">
+      <Button fx:id="Cupons" layoutX="380.0" layoutY="491.0" mnemonicParsing="false" onAction="#verCupons" text="Ver seus Cupons" />
+      <Text layoutX="56.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Cupon:" wrappingWidth="121.0">
          <font>
-            <Font size="18.0" />
+            <Font size="17.0" />
          </font>
       </Text>
-      <TextField layoutX="182.0" layoutY="397.0" />
-      <Button layoutX="354.0" layoutY="395.0" mnemonicParsing="false" text="inserir" />
+      <TextField layoutX="163.0" layoutY="398.0" prefHeight="26.0" prefWidth="162.0" />
+      <Button fx:id="inCupom" layoutX="339.0" layoutY="398.0" mnemonicParsing="false" onAction="#insertCupom" text="Inserir Cupom" />
+      <Text fx:id="total" layoutX="170.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" underline="true" wrappingWidth="304.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Label fx:id="valorTotal" layoutX="170.0" layoutY="80.0" prefHeight="30.0" prefWidth="273.0" />
    </children>
 </AnchorPane>

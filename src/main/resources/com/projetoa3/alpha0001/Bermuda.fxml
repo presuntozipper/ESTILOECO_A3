@@ -13,17 +13,17 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="700.0" prefWidth="1370.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetoa3.alpha0001.Principal.Produtos.BermudaController">
+<AnchorPane prefHeight="700.0" prefWidth="1370.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetoa3.alpha0001.BermudaController">
    <children>
       <BorderPane fx:id="mainPane" prefHeight="200.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <center>
+         <right>
             <AnchorPane fx:id="tam5" prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
                <children>
                   <AnchorPane layoutX="442.0" layoutY="103.0" prefHeight="439.0" prefWidth="365.0" styleClass="backPanel" stylesheets="@design.css">
                      <children>
-                        <ImageView id="teste" fx:id="teste" fitHeight="352.0" fitWidth="240.0" layoutX="60.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView id="teste" fx:id="teste" fitHeight="378.0" fitWidth="284.0" layoutX="36.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@AcervoIcone/jeansmasculino-removebg-preview.png" />
+                              <Image url="@AcervoIcone/imagem_2024-06-04_160531356-removebg-preview.png" />
                            </image>
                         </ImageView>
                      </children></AnchorPane>
@@ -70,26 +70,26 @@
                      </children>
                   </AnchorPane>
                   <Pane prefHeight="25.0" prefWidth="1200.0" />
-                  <Text layoutX="860.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JEANS MASCULINO" wrappingWidth="384.4375">
+                  <Text layoutX="860.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BERMUDA JEANS FEMININO BARRA DOBRADA" wrappingWidth="384.4375">
                      <font>
                         <Font size="40.0" />
                      </font></Text>
-                  <Text fill="#657953" layoutX="914.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R$159.99">
+                  <Text fill="#657953" layoutX="928.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R$119.99">
                      <font>
                         <Font size="52.0" />
                      </font>
                   </Text>
                   <Button fx:id="addCarrinho" layoutX="961.0" layoutY="453.0" mnemonicParsing="false" onAction="#addList" prefHeight="37.0" prefWidth="145.0" text="adicionar ao carrinho" />
                   <Button fx:id="close" layoutX="1290.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" styleClass="close-btn" stylesheets="@design.css" text="X" />
-                  <ChoiceBox fx:id="escolheTam" layoutX="959.0" layoutY="310.0" prefWidth="150.0" />
-                  <Text layoutX="924.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escolha o tamanho!">
+                  <ChoiceBox fx:id="escolheTam" layoutX="954.0" layoutY="387.0" prefWidth="150.0" />
+                  <Text layoutX="912.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escolha o tamanho!">
                      <font>
                         <Font size="27.0" />
                      </font>
                   </Text>
                </children>
             </AnchorPane>
-         </center>
+         </right>
       </BorderPane>
    </children>
 </AnchorPane>

@@ -21,7 +21,7 @@ public class DadosUsuario {
     private String numero;
     private String estado;
     private String codigo;
-    private ArrayList<String> cupons = new ArrayList();
+    private  ArrayList<String> cupons = new ArrayList();
     private String temp;
     private String creditos;
     private DadosUsuario() {}
@@ -140,7 +140,7 @@ public class DadosUsuario {
         cupons.addAll(SQL.sqlgetCupom(idUsuario));
     }
 
-    public ArrayList getCupons(){
+    public  ArrayList getCupons(){
         return cupons ;
     }
 
