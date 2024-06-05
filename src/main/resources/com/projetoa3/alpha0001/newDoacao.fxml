@@ -19,7 +19,7 @@
             </Text>
             <Text layoutX="202.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nos informe qual o tipo peça" />
             <Spinner fx:id="contador" editable="true" layoutX="73.0" layoutY="197.0" prefHeight="31.0" prefWidth="117.0" />
-            <Text layoutX="73.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nos informe a quantidade de peças" wrappingWidth="145.0" />
+            <Text layoutX="66.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nos informe a quantidade de peças" wrappingWidth="131.0" />
             <TextField fx:id="insert" layoutX="218.0" layoutY="200.0" prefHeight="26.0" prefWidth="165.0" promptText="insira aqui!" />
             <Button fx:id="cupon" layoutX="320.0" layoutY="438.0" mnemonicParsing="false" onAction="#Cupon" prefHeight="36.0" prefWidth="145.0" text="Gerar Id de doação" />
             <Text layoutX="52.0" layoutY="414.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="*Ao doar peças você tem direito a cupons de desconto na loja." wrappingWidth="187.93618774414062" />

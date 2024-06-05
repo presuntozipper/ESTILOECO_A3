@@ -15,7 +15,7 @@
             <Font size="28.0" />
          </font>
       </Text>
-      <Text layoutX="77.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL:" wrappingWidth="102.0">
+      <Text layoutX="96.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL:" wrappingWidth="102.0">
          <font>
             <Font size="28.0" />
          </font>
@@ -25,7 +25,7 @@
       <RadioButton fx:id="Debito" disable="true" layoutX="316.0" layoutY="247.0" mnemonicParsing="false" text="Debito" />
       <RadioButton fx:id="EcoCoins" layoutX="96.0" layoutY="297.0" mnemonicParsing="false" onAction="#Selectpagamento" prefHeight="30.0" prefWidth="110.0" text="ECO-Coins" />
       <Button fx:id="Pagar" disable="true" layoutX="221.0" layoutY="484.0" mnemonicParsing="false" onAction="#pagar" styleClass="cadastro-btn" stylesheets="@design.css" text="PAGAR" />
-      <Text layoutX="14.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Endereço deve ser alterado previamente" />
+      <Text layoutX="122.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Endereço deve ser alterado previamente" />
       <Button fx:id="Voltar" layoutX="467.0" layoutY="2.0" mnemonicParsing="false" onAction="#voltar" styleClass="voltar-btn" stylesheets="@design.css" text="X" />
       <Text fx:id="coinLabel" layoutX="119.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suas ECOCOINS" visible="false" wrappingWidth="102.0" />
       <Text fx:id="coinText" layoutX="237.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" wrappingWidth="94.98307228088379" />
@@ -37,11 +37,11 @@
       </Text>
       <TextField layoutX="163.0" layoutY="398.0" prefHeight="26.0" prefWidth="162.0" />
       <Button fx:id="inCupom" layoutX="339.0" layoutY="398.0" mnemonicParsing="false" onAction="#insertCupom" text="Inserir Cupom" />
-      <Text fx:id="total" layoutX="170.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" underline="true" wrappingWidth="304.0">
+      <Text fx:id="total" layoutX="214.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" underline="true" wrappingWidth="251.0">
          <font>
             <Font size="28.0" />
          </font>
       </Text>
-      <Label fx:id="valorTotal" layoutX="170.0" layoutY="80.0" prefHeight="30.0" prefWidth="273.0" />
+      <Label fx:id="valorTotal" layoutX="203.0" layoutY="70.0" prefHeight="37.0" prefWidth="273.0" styleClass="btn-product" stylesheets="@design.css" />
    </children>
 </AnchorPane>
