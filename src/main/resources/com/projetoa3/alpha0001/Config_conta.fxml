@@ -32,7 +32,8 @@
                         <Button fx:id="perfil" mnemonicParsing="false" prefHeight="30.0" prefWidth="119.0" styleClass="normal-btn" stylesheets="@design.css" text="perfil" />
                         <Button fx:id="pagtoMet" mnemonicParsing="false" onAction="#metPagto" prefHeight="44.0" prefWidth="121.0" styleClass="normal-btn" text="Pagamento" />
                         <Button fx:id="Doe" mnemonicParsing="false" onAction="#doacao" prefHeight="42.0" prefWidth="119.0" styleClass="normal-btn" stylesheets="@design.css" text="Doação" />
-                        <Button fx:id="Cupons" mnemonicParsing="false" onAction="#verCupons" prefHeight="30.0" prefWidth="121.0" styleClass="normal-btn" stylesheets="@design.css" text="Cupons" />
+                        <Button fx:id="Cupons" mnemonicParsing="false" onAction="#verCupons" prefHeight="30.0" prefWidth="120.0" styleClass="normal-btn" stylesheets="@design.css" text="Cupons" />
+                        <Button fx:id="verPedidos" mnemonicParsing="false" onAction="#verPedido" prefHeight="30.0" prefWidth="120.0" styleClass="normal-btn" stylesheets="@design.css" text="Pedidos" />
                      </children>
                   </VBox>
                   <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="19.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
@@ -62,6 +63,11 @@
                      <image>
                         <Image url="@AcervoIcone/codigo-promocional.png" />
                      </image></ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="20.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@AcervoIcone/delivery-van.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
             <AnchorPane layoutX="223.0" layoutY="34.0" prefHeight="645.0" prefWidth="1126.0" styleClass="backPanel" stylesheets="@design.css">
@@ -80,11 +86,11 @@
                      <font>
                         <Font size="25.0" />
                      </font></Label>
-                  <Label layoutX="63.0" layoutY="165.0" prefHeight="36.0" prefWidth="139.0" text="Senha atual:">
+                  <Label layoutX="70.0" layoutY="165.0" prefHeight="36.0" prefWidth="139.0" text="Senha atual:">
                      <font>
                         <Font size="25.0" />
                      </font></Label>
-                  <Label layoutX="61.0" layoutY="283.0" prefHeight="36.0" prefWidth="197.0" text="Telefone atual:">
+                  <Label layoutX="63.0" layoutY="283.0" prefHeight="36.0" prefWidth="197.0" text="Telefone atual:">
                      <font>
                         <Font size="25.0" />
                      </font></Label>
