@@ -28,14 +28,14 @@ private static ArrayList pedido = new ArrayList();
         } catch (SQLException e) {throw new RuntimeException(e);}
     }
 
-    public static boolean sqlCadastro(String nome,String email, String senha,String cep ) throws SQLException {
+    public static boolean sqlCadastro(String nome,String email, String senha,String cep) throws SQLException {
             String sql = "select * from usuario where idUsuario ";
-
+            int i = 10000;
             Statement stmt = ConnectDb.getConnection().createStatement();
             ResultSet rs = stmt.executeQuery(sql);
 
             stmt = ConnectDb.getConnection().createStatement();
-            sql = "insert into usuario (nomeUsuario,emailUsuario,senhaUsuario,cepUsuario) values (?,?,?,?)";
+            sql = "insert into usuario (nomeUsuario,emailUsuario,senhaUsuario,cepUsuario,creditoUsuario) values (?,?,?,?,?)";
             PreparedStatement ps;
           try {
             ps = ConnectDb.getConnection().prepareStatement(sql);
@@ -44,7 +44,7 @@ private static ArrayList pedido = new ArrayList();
            ((PreparedStatement) ps).setString(2, email);
            ((PreparedStatement) ps).setString(3, senha);
            ((PreparedStatement) ps).setString(4, cep);
-
+           ((PreparedStatement) ps).setInt(5, i);
             ps.executeUpdate();
             ps.close();
             System.out.println("Cadastro concluido com sucesso");
@@ -326,18 +326,7 @@ private static ArrayList pedido = new ArrayList();
         statement.close();
         return cupons;
     }
-    public static void sqlECOCOINS(String usuario)throws SQLException{
-          PreparedStatement ps;
-          String sql = "insert into usuario (creditoUsuario) value (10000) ";
-          try {
-            ps = ConnectDb.getConnection().prepareStatement(sql);
-            ps.setString(1, usuario);
 
-            ps.executeUpdate();
-            ps.close();
-            System.out.println("Inserido com sucesso");
-        } catch (SQLException e) {throw new RuntimeException(e);}
-    }
 
     public static ArrayList sqlGetPedido(String idUsuario) throws SQLException {
         String sql = "select * from pedidos where userID=?";

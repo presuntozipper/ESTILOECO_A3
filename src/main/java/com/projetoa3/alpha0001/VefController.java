@@ -27,7 +27,6 @@ public class VefController {
     DadosUsuario dadosUsuario = DadosUsuario.getInstance();
     @FXML
     void mudar_pag(ActionEvent event) throws IOException, SQLException {
-         SQL.sqlECOCOINS(dadosUsuario.getIdUsuario());
          SQL.sqlInsert(dadosUsuario.getIdUsuario(), dadosUsuario.getTemp());
         FXMLLoader loader = new FXMLLoader(getClass().getResource("NewLogin.fxml"));
         Parent root = loader.load();
