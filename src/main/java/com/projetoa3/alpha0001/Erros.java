@@ -52,4 +52,11 @@ public class Erros {
             alert.setContentText("Sem cupons");
             alert.showAndWait();
     }
+    public void erroiCupons(){
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Erro");
+            alert.setHeaderText(null);
+            alert.setContentText("Insira o nome da peça no campo");
+            alert.showAndWait();
+    }
 }

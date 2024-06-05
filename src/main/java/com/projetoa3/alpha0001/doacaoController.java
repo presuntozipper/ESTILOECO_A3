@@ -75,8 +75,10 @@ public class doacaoController implements Initializable {
 
 
     public void addLista(ActionEvent event) throws IOException {
-        listView.getItems().add(insert.getText());
-        listViewQTD.getItems().add(contador.getValue());
+        if(insert.getText().isEmpty()){erros.erroiCupons();}
+        else{listView.getItems().add(insert.getText());
+        listViewQTD.getItems().add(contador.getValue());}
+
     }
 
      public void voltar(ActionEvent event) throws IOException {
