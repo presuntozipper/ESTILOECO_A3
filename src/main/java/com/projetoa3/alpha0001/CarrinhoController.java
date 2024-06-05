@@ -3,6 +3,7 @@ package com.projetoa3.alpha0001;
 import com.projetoa3.alpha0001.Principal.Produtos.Produto;
 import com.projetoa3.alpha0001.Usuario.Carrinho;
 
+import com.projetoa3.alpha0001.Usuario.DadosUsuario;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -27,6 +28,7 @@ public class CarrinhoController implements Initializable {
     Produto p = Produto.getInstance();
     Carrinho c = Carrinho.getInstance();
     Erros erros = new Erros();
+
     @FXML
     private TableColumn<Produto, Integer> id;
     @FXML
@@ -70,7 +72,7 @@ public class CarrinhoController implements Initializable {
     @FXML
     private ListView<String> listPreco = new ListView<String>();
     Produto prod = Produto.getInstance();
-
+    DadosUsuario dados = DadosUsuario.getInstance();
 
     public void comprar(ActionEvent event) throws IOException {
        comprar.getScene().getWindow();

@@ -21,7 +21,7 @@
                <children>
                   <AnchorPane layoutX="267.0" layoutY="75.0" prefHeight="585.0" prefWidth="1056.0" styleClass="backPanel" stylesheets="@design.css">
                      <children>
-                        <Text layoutX="661.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confira o carrinho!" wrappingWidth="297.9830722808838">
+                        <Text layoutX="578.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confira o carrinho!" wrappingWidth="297.9830722808838">
                            <font>
                               <Font size="31.0" />
                            </font>
@@ -40,8 +40,13 @@
                               <Image url="@AcervoIcone/trash.png" />
                            </image></ImageView>
                         <Text fx:id="total" layoutX="670.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="113.98307228088379" />
-                        <ListView fx:id="listPreco" layoutX="627.0" layoutY="391.0" prefHeight="28.0" prefWidth="200.0" />
-                        <Button fx:id="comprar" layoutX="635.0" layoutY="476.0" mnemonicParsing="false" onAction="#comprar" text="Finalizar compra" />
+                        <ListView fx:id="listPreco" layoutX="659.0" layoutY="145.0" prefHeight="32.0" prefWidth="202.0" />
+                        <Button fx:id="comprar" layoutX="670.0" layoutY="473.0" mnemonicParsing="false" onAction="#comprar" text="Finalizar compra" />
+                        <Text layoutX="543.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor total:">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
                      </children></AnchorPane>
                   <AnchorPane layoutY="7.0" prefHeight="684.0" prefWidth="253.0" styleClass="dashPane" stylesheets="@design.css">
                      <children>

@@ -43,9 +43,9 @@ public class LoginController extends Config_ContaController   implements Initial
         try {
             if (SQL.sqlDados(usuario, senha)) {
                 dados.setUsuario(usuario);
-
-                dadosUsuario.setCredit(usuario);
                 dados.setIdUsuario(usuario);
+                dadosUsuario.setCupons(dadosUsuario.getIdUsuario());
+                dadosUsuario.setCredit(usuario);
                 dados.setUsuario(usuario);
                 dados.setEmail(usuario);
                 dados.setSenha(usuario);

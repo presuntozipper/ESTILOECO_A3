@@ -1,5 +1,6 @@
-package com.projetoa3.alpha0001.Principal.Produtos;
+package com.projetoa3.alpha0001;
 
+import com.projetoa3.alpha0001.Principal.Produtos.Produto;
 import com.projetoa3.alpha0001.Usuario.Carrinho;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,13 +16,12 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-import javax.swing.*;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
-public class BermudaController implements Initializable {
+public class ShortsController implements Initializable {
      @FXML
     private ChoiceBox<String> escolheTam;
     @FXML
@@ -62,7 +62,7 @@ public class BermudaController implements Initializable {
     Produto prod = Produto.getInstance();
     public void addList(ActionEvent event) throws IOException {
         itemID = 1;
-        nomeItem = "Bermuda Jeans ,tamanho: " + escolheTam.getValue(); ;
+        nomeItem = "Shorts Jeans,tamanho: " + escolheTam.getValue(); ;
         value = 159.99;
       prod.produto(itemID,nomeItem, value);
       c.addValCarrinho(value);
@@ -105,10 +105,8 @@ public class BermudaController implements Initializable {
     }
 
 public void sair(ActionEvent actionEvent) throws IOException {
-       int resposta = JOptionPane.showConfirmDialog(null,"Você tem certeza se quer sair?","confirmação",JOptionPane.YES_NO_OPTION);
-       if(resposta == JOptionPane.YES_OPTION)
-       {
-           FXMLLoader loader = new FXMLLoader(getClass().getResource("Pag_principal"));
+
+           FXMLLoader loader = new FXMLLoader(getClass().getResource("Pag_principal.fxml"));
            Parent root = loader.load();
            voltar.getScene().getWindow().hide();
            Stage stage = new Stage();
@@ -116,7 +114,6 @@ public void sair(ActionEvent actionEvent) throws IOException {
            stage.initStyle(StageStyle.TRANSPARENT);
            stage.setScene(scene);
            stage.show();
-       }
    }
     @FXML
     void close(){

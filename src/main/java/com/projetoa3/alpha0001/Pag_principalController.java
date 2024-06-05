@@ -65,6 +65,8 @@ public class Pag_principalController  {
             stage.setScene(scene);
             stage.initStyle(StageStyle.TRANSPARENT);
             stage.show();
+
+
     }
      public void saiaJeans() throws IOException {
             SaiaJeans.getScene().getWindow().hide();
@@ -84,6 +86,7 @@ public class Pag_principalController  {
             stage.initStyle(StageStyle.TRANSPARENT);
             stage.show();
     }
+
      public void shortsJeans() throws IOException {
             shortsJeans.getScene().getWindow().hide();
             Parent root = FXMLLoader.load(getClass().getResource("Shorts.fxml"));
@@ -93,6 +96,7 @@ public class Pag_principalController  {
             stage.initStyle(StageStyle.TRANSPARENT);
             stage.show();
     }
+
      public void JaquetaJeans() throws IOException {
             JaquetaJeans.getScene().getWindow().hide();
             Parent root = FXMLLoader.load(getClass().getResource("Jaqueta.fxml"));
@@ -102,6 +106,7 @@ public class Pag_principalController  {
             stage.initStyle(StageStyle.TRANSPARENT);
             stage.show();
     }
+
      public void macacoJeans() throws IOException {
             macacaoJeans.getScene().getWindow().hide();
             Parent root = FXMLLoader.load(getClass().getResource("Macacao.fxml"));
@@ -114,7 +119,7 @@ public class Pag_principalController  {
 
 
    public void conta(ActionEvent event) throws IOException, SQLException {
-            dadosUsuario.setCupons(dadosUsuario.getIdUsuario());
+
             conta.getScene().getWindow().hide();
             Parent root = FXMLLoader.load(getClass().getResource("Config_conta.fxml"));
             Stage stage = new Stage();

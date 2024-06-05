@@ -1,5 +1,6 @@
-package com.projetoa3.alpha0001.Principal.Produtos;
+package com.projetoa3.alpha0001;
 
+import com.projetoa3.alpha0001.Principal.Produtos.Produto;
 import com.projetoa3.alpha0001.Usuario.Carrinho;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,13 +16,12 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-import javax.swing.*;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
-public class MacacaoController implements Initializable {
+public class JaquetaController implements Initializable {
      @FXML
     private ChoiceBox<String> escolheTam;
     @FXML
@@ -61,9 +61,9 @@ public class MacacaoController implements Initializable {
     Carrinho c = new Carrinho();
     Produto prod = Produto.getInstance();
     public void addList(ActionEvent event) throws IOException {
-        itemID = 1;
-        nomeItem = "Macacão Jeans,tamanho: " + escolheTam.getValue(); ;
-        value = 159.99;
+        itemID = 4;
+        nomeItem = "Jaqueta Jeans,tamanho: " + escolheTam.getValue(); ;
+        value = 259.99;
       prod.produto(itemID,nomeItem, value);
       c.addValCarrinho(value);
       System.out.println(c.getValCarrinho());
@@ -105,10 +105,8 @@ public class MacacaoController implements Initializable {
     }
 
 public void sair(ActionEvent actionEvent) throws IOException {
-       int resposta = JOptionPane.showConfirmDialog(null,"Você tem certeza se quer sair?","confirmação",JOptionPane.YES_NO_OPTION);
-       if(resposta == JOptionPane.YES_OPTION)
-       {
-           FXMLLoader loader = new FXMLLoader(getClass().getResource("Pag_principal"));
+
+           FXMLLoader loader = new FXMLLoader(getClass().getResource("Pag_principal.fxml"));
            Parent root = loader.load();
            voltar.getScene().getWindow().hide();
            Stage stage = new Stage();
@@ -116,7 +114,7 @@ public void sair(ActionEvent actionEvent) throws IOException {
            stage.initStyle(StageStyle.TRANSPARENT);
            stage.setScene(scene);
            stage.show();
-       }
+
    }
     @FXML
     void close(){
@@ -127,8 +125,8 @@ public void sair(ActionEvent actionEvent) throws IOException {
     public void initialize(URL location, ResourceBundle resources) {
         //preco.setText("R$ 159.99");
       //  NomeProduto.setText("Calça Jeans");
-        escolheTam.getItems().addAll("36", "38","40","42","44","46");
+        escolheTam.getItems().addAll("PP","P","M","G","GG");
 
-        escolheTam.setValue("40");
+        escolheTam.setValue("P");
     }
 }
