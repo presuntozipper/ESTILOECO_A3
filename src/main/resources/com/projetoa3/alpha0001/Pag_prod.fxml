@@ -79,7 +79,7 @@
                         <Font size="52.0" />
                      </font>
                   </Text>
-                  <Button fx:id="addCarrinho" layoutX="961.0" layoutY="453.0" mnemonicParsing="false" onAction="#addList" prefHeight="37.0" prefWidth="145.0" text="adicionar ao carrinho" />
+                  <Button fx:id="addCarrinho" layoutX="961.0" layoutY="453.0" mnemonicParsing="false" onAction="#addList" prefHeight="37.0" prefWidth="145.0" styleClass="normal-btn" stylesheets="@design.css" text="adicionar ao carrinho" />
                   <Button fx:id="close" layoutX="1290.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" styleClass="close-btn" stylesheets="@design.css" text="X" />
                   <ChoiceBox fx:id="escolheTam" layoutX="959.0" layoutY="310.0" prefWidth="150.0" />
                   <Text layoutX="924.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escolha o tamanho!">

@@ -24,6 +24,7 @@ public class DadosUsuario {
     private  ArrayList<String> cupons = new ArrayList();
     private String temp;
     private String creditos;
+    private ArrayList pedido = new ArrayList<>();
     private DadosUsuario() {}
     public static DadosUsuario getInstance() {
             return instance;
@@ -143,5 +144,10 @@ public class DadosUsuario {
     public  ArrayList getCupons(){
         return cupons ;
     }
-
+    public void setPedido(String idUsuario) throws SQLException {
+        pedido.addAll(SQL.sqlGetPedido(idUsuario));
+    };
+    public ArrayList getPedido(){
+        return pedido;
+    }
 }

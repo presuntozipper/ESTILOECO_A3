@@ -12,6 +12,7 @@ public class SQL {
 public static Erros erros = new Erros();
 static DadosUsuario dados = DadosUsuario.getInstance();
 private static ArrayList cupons = new ArrayList();
+private static ArrayList pedido = new ArrayList();
 
     public static void sqlInsert(String username, String estado) {
           PreparedStatement ps;
@@ -338,17 +339,23 @@ private static ArrayList cupons = new ArrayList();
         } catch (SQLException e) {throw new RuntimeException(e);}
     }
 
-    public static void sqlInsertPedido(String pedido){
-        PreparedStatement ps;
-          String sql = "insert into pedidos (descricaoPedido) value (?) ";
-          try {
-            ps = ConnectDb.getConnection().prepareStatement(sql);
-            ps.setString(1, pedido);
+    public static ArrayList sqlGetPedido(String idUsuario) throws SQLException {
+        String sql = "select * from pedidos where userID=?";
+        String aux = "";
+        PreparedStatement ps = ConnectDb.getConnection().prepareStatement(sql);
+        ps.setString(1, idUsuario);
+        ResultSet rs = ps.executeQuery();
+        while (rs.next()) {
+            aux = rs.getString("idPedido");
+            pedido.add(aux);
+            aux = rs.getString("DataeHora");
+            pedido.add(aux);
+            aux = rs.getString("descricaoPedido");
+            pedido.add(aux);
+        }
 
-            ps.executeUpdate();
-            ps.close();
-            System.out.println("Inserido com sucesso");
-        } catch (SQLException e) {throw new RuntimeException(e);}
+
+        return pedido;
     }
 
 }

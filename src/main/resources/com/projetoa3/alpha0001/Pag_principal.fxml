@@ -46,7 +46,7 @@
                         </AnchorPane>
                         <AnchorPane layoutX="304.0" layoutY="20.0" minHeight="0.0" minWidth="0.0" prefHeight="227.0" prefWidth="165.0" styleClass="produtc-pane" stylesheets="@design.css">
                            <children>
-                              <ImageView id="teste" fx:id="teste1" fitHeight="165.0" fitWidth="145.0" layoutX="8.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView id="teste" fx:id="teste1" fitHeight="165.0" fitWidth="145.0" layoutX="10.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@AcervoIcone/imagem_2024-06-03_160542509-removebg-preview.png" />
                                  </image>
@@ -63,12 +63,12 @@
                         </AnchorPane>
                         <AnchorPane layoutX="566.0" layoutY="20.0" minHeight="0.0" minWidth="0.0" prefHeight="224.0" prefWidth="165.0" styleClass="produtc-pane" stylesheets="@design.css">
                            <children>
-                              <ImageView id="teste" fx:id="teste2" fitHeight="192.0" fitWidth="139.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView id="teste" fx:id="teste2" fitHeight="208.0" fitWidth="184.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@AcervoIcone/imagem_2024-06-03_161123843-removebg-preview.png" />
+                                    <Image url="@AcervoIcone/imagem_2024-06-04_155910771-removebg-preview.png" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="JaquetaJeans" alignment="CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="5.0" layoutX="2.0" layoutY="11.0" mnemonicParsing="false" onAction="#JaquetaJeans" opacity="0.0" prefHeight="202.0" prefWidth="161.0" stylesheets="@design.css">
+                              <Button fx:id="JaquetaJeans" alignment="CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="5.0" layoutX="-38.0" layoutY="74.0" mnemonicParsing="false" onAction="#JaquetaJeans" opacity="0.0" prefHeight="202.0" prefWidth="161.0" stylesheets="@design.css">
                                  <cursor>
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
@@ -80,12 +80,12 @@
                         </AnchorPane>
                         <AnchorPane layoutX="846.0" layoutY="20.0" minHeight="0.0" minWidth="0.0" prefHeight="218.0" prefWidth="165.0" styleClass="produtc-pane" stylesheets="@design.css">
                            <children>
-                              <ImageView id="teste" fx:id="teste3" fitHeight="134.0" fitWidth="159.0" layoutX="8.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView id="teste" fx:id="teste3" fitHeight="134.0" fitWidth="159.0" layoutX="7.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@AcervoIcone/imagem_2024-06-03_162016109-removebg-preview.png" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="SaiaJeans" alignment="CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="5.0" layoutX="2.0" layoutY="8.0" mnemonicParsing="false" onAction="#saiaJeans" opacity="0.0" prefHeight="202.0" prefWidth="161.0" stylesheets="@design.css">
+                              <Button fx:id="SaiaJeans" alignment="CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="5.0" layoutX="8.0" layoutY="21.0" mnemonicParsing="false" onAction="#saiaJeans" opacity="0.0" prefHeight="202.0" prefWidth="161.0" stylesheets="@design.css">
                                  <cursor>
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
@@ -97,12 +97,12 @@
                         </AnchorPane>
                         <AnchorPane layoutX="43.0" layoutY="310.0" minHeight="0.0" minWidth="0.0" prefHeight="230.0" prefWidth="165.0" styleClass="produtc-pane" stylesheets="@design.css">
                            <children>
-                              <ImageView id="teste" fx:id="teste4" fitHeight="173.0" fitWidth="135.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView id="teste" fx:id="teste4" fitHeight="192.0" fitWidth="148.0" layoutX="9.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@AcervoIcone/imagem_2024-06-03_193916857-removebg-preview.png" />
+                                    <Image url="@AcervoIcone/imagem_2024-06-04_160531356-removebg-preview.png" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="BermudasJeans" alignment="CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="5.0" layoutX="-3.0" mnemonicParsing="false" onAction="#bermudaJeans" opacity="0.0" prefHeight="202.0" prefWidth="161.0" stylesheets="@design.css">
+                              <Button fx:id="BermudasJeans" alignment="CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="5.0" layoutY="-33.0" mnemonicParsing="false" onAction="#bermudaJeans" opacity="0.0" prefHeight="202.0" prefWidth="161.0" stylesheets="@design.css">
                                  <cursor>
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
@@ -179,7 +179,7 @@
                            </image>
                         </ImageView>
                         <Button fx:id="Sair" layoutX="91.0" layoutY="597.0" mnemonicParsing="false" onAction="#sair" prefHeight="36.0" prefWidth="71.0" styleClass="logout-btn" stylesheets="@design.css" text="Sair" />
-                        <VBox layoutX="84.0" layoutY="227.0" prefHeight="266.0" prefWidth="160.0" spacing="20.0">
+                        <VBox layoutX="82.0" layoutY="220.0" prefHeight="178.0" prefWidth="143.0" spacing="20.0">
                            <children>
                               <Button fx:id="conta" mnemonicParsing="false" onAction="#conta" prefHeight="42.0" prefWidth="139.0" styleClass="normal-btn" stylesheets="@design.css" text="Conta" />
                               <Button fx:id="carrinho" mnemonicParsing="false" onAction="#carrinho" prefHeight="45.0" prefWidth="140.0" styleClass="normal-btn" stylesheets="@design.css" text="Carrinho">
@@ -195,7 +195,7 @@
                               <Image url="@AcervoIcone/ecology.png" />
                            </image>
                         </ImageView>
-                        <Text layoutX="18.0" layoutY="675.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*versão 0.8 " />
+                        <Text layoutX="18.0" layoutY="675.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*versão 1.0 " />
                      </children>
                   </AnchorPane>
                   <Pane prefHeight="25.0" prefWidth="1200.0" />
